@@ -66,11 +66,6 @@ header nav a {
     text-align: justify;
 }
 
-.project-section div p{
-    font-size: 1.5rem;
-    max-width: 40vw;
-}
-
 #img-section{
     max-width: 60vw;
 }
@@ -84,14 +79,24 @@ header nav a {
     cursor: pointer;
 }
 
-p{
+.description-project{
+    font-size: 1.5rem;
+    max-width: 40vw;
     color: #828282;
 }
 
-h1{
+.title-project{
+    margin: 1rem 0;
     color: #0A5864;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.button-project{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-family: 'Inter';
+    font-weight: 800;
 }
 
 /* Seção de Equipe */
@@ -311,5 +316,11 @@ footer div {
 
     h4{
         margin-top: 15px;
+    }
+
+    .to-top{
+        width: 100vw;
+        text-decoration: none;
+        color: #333333;
     }
 }
