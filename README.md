@@ -9,3 +9,4 @@ A ação visa à realização de ações informativas, como a produção de podc
 [Monitor] Educador - João Pedro Mendes de Oliveira <br>
 [Monitora] Educadora - Vitória Nascimento
 
+## Tecnologias Utilizadas no Website
