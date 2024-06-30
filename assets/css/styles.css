@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; 
+    transition-delay: 1s; 
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    color: #333333;
+}
+
+hr{
+    color: #fff;
+}
+
+/* Cabeçalho */
+
+#logo{
+    max-width: 180px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333333;
+}
+
+
+/* Seção de Projeto */
+
+.main-content {
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+.project-section{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project-section div{
+    max-width: 50vw;
+    text-align: justify;
+}
+
+.project-section div p{
+    font-size: 1.5rem;
+    max-width: 40vw;
+}
+
+#img-section{
+    max-width: 60vw;
+}
+
+.project-section button {
+    background-color: #000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+p{
+    color: #828282;
+}
+
+h1{
+    color: #0A5864;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Seção de Equipe */
+
+.team-section, .testimonials-depoimento{
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+}
+
+.team-section h2{
+    color: #0A5864;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+.testimonials-section .testimonials-depoimento{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonials-section h2{
+    color: #0A5864;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.testimonials-section div img{
+    width: 25vw;
+}
+
+.team-section, .testimonials-section {
+    margin-top: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.team-member{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.team-member:nth-child(3){
+    flex-direction: row-reverse;
+}
+
+.team-member div .texto-section{
+    color: #828282;
+}
+
+.team-member, .testimonial {
+    grid-column: span 4;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.team-member img{
+    max-width: 100%;
+    max-height: 40vh;
+}
+
+.img-testimonials{
+    max-width: 50%;
+    height: 25%;
+}
+
+.team-member h3, .team-member p, .testimonial p {
+    color: #333333;
+}
+
+.texto-section{
+    margin-top: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #333333;
+    text-decoration: none;
+}
+
+footer div {
+    margin-bottom: 10px;
+}
+
+.img-footer{
+    max-width: 30vw;
+    height: 10vh;
+    margin-left: 20px;
+}
+
+.social-media{
+    width: 10vw;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rede-social{
+    font-size: 40px;
+}
+
+.rede-social:hover{
+    color: #0A5864;
+}
+
+/* Telas menores */
+
+@media (max-width: 590px) {
+    
+    /* Cabeçalho */
+
+    header{
+        flex-direction: column;
+    }
+
+    .project-section{
+        flex-direction: column;
+    }
+
+    .project-section div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-section div h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .project-section div p{
+        font-size: 1em;
+        text-align: center;
+        max-width: 60vw;
+    }
+    
+    #img-section{
+        max-width: 80vw;
+    }
+
+    /* Seção de Equipe */
+
+    .team-section h2{
+        color: #0A5864;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .team-member, .team-member:nth-child(3){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .team-member h3, .team-member p{
+        text-align: center;
+    }
+
+    .team-member img{
+        max-width: 100%;
+        max-height: 30vh;
+    }
+
+    .img-footer{
+        width: 20vh;
+    }
+
+    .testimonials-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials-section h2{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .testimonials-section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media{
+        width: 30vw;
+        margin: auto;
+        align-items: center;
+    }
+
+    .img-testimonials{
+        max-width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    h4{
+        margin-top: 15px;
+    }
+}
