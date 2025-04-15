@@ -15,4 +15,4 @@ A ação visa à realização de ações informativas, como a produção de podc
   <img align='center' height='40' width='50' alt='Vih-HTML' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
 </div>
 
-### Versão 1.0
+### Versão 1.1
