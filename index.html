@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="pt-BR"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberEduc - Educação em Cibersegurança</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="assets/img/logo-menu.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/styles.css">
     <script>
         tailwind.config = {
@@ -48,8 +50,8 @@
                     <li><a href="#home" class="nav-link block py-2 pr-4 pl-3 text-primary md:p-0">Início</a></li>
                     <li><a href="#quem-somos" class="nav-link block py-2 pr-4 pl-3 text-dark hover:text-primary md:p-0">Quem Somos</a></li>
                     <li><a href="#acoes" class="nav-link block py-2 pr-4 pl-3 text-dark hover:text-primary md:p-0">Ações</a></li>
-                    <li><a href="#materiais" class="nav-link block py-2 pr-4 pl-3 text-dark hover:text-primary md:p-0 active">Materiais</a></li>
                     <li><a href="#contato" class="nav-link block py-2 pr-4 pl-3 text-dark hover:text-primary md:p-0">Contato</a></li>
+                    <li><a href="#materiais" class="hidden nav-link block py-2 pr-4 pl-3 text-dark hover:text-primary md:p-0 active">Materiais</a></li>
                 </ul>
             </div>
         </nav>
@@ -230,62 +232,10 @@
                         <p class="text-gray-600 text-sm">Encontros para troca de experiências e aprendizado coletivo sobre segurança digital.</p>
                     </div>
                 </div>
-                
-                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <div class="relative pb-[70%] bg-gray-200">
-                        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="280" fill="#e0e0e0"></rect>
-                            <rect x="50" y="50" width="300" height="180" fill="#00525d"></rect>
-                            <circle cx="200" cy="140" r="60" fill="#fff"></circle>
-                            <rect x="170" y="100" width="60" height="80" rx="5" fill="#ffc107"></rect>
-                            <rect x="120" y="180" width="160" height="20" fill="#4fc3f7"></rect>
-                            <text x="200" y="195" font-size="14" text-anchor="middle" fill="#333">Oficina para Crianças</text>
-                        </svg>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-semibold text-lg mb-1">Oficinas Infantis</h3>
-                        <p class="text-gray-600 text-sm">Atividades lúdicas para ensinar crianças sobre segurança na internet.</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <div class="relative pb-[70%] bg-gray-200">
-                        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="280" fill="#e0e0e0"></rect>
-                            <rect x="50" y="50" width="300" height="180" fill="#00525d"></rect>
-                            <rect x="100" y="80" width="200" height="120" fill="#fff"></rect>
-                            <line x1="100" y1="110" x2="300" y2="110" stroke="#4fc3f7" stroke-width="2"></line>
-                            <line x1="100" y1="140" x2="300" y2="140" stroke="#4fc3f7" stroke-width="2"></line>
-                            <line x1="100" y1="170" x2="300" y2="170" stroke="#4fc3f7" stroke-width="2"></line>
-                            <rect x="120" y="180" width="160" height="20" fill="#4fc3f7"></rect>
-                            <text x="200" y="195" font-size="14" text-anchor="middle" fill="#333">Treinamento Corporativo</text>
-                        </svg>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-semibold text-lg mb-1">Treinamentos Corporativos</h3>
-                        <p class="text-gray-600 text-sm">Capacitação para empresas sobre proteção de dados e segurança da informação.</p>
-                    </div>
-                </div>
-                
-                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <div class="relative pb-[70%] bg-gray-200">
-                        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="280" fill="#e0e0e0"></rect>
-                            <rect x="50" y="50" width="300" height="180" fill="#00525d"></rect>
-                            <polygon points="200,80 240,150 160,150" fill="#ffc107"></polygon>
-                            <rect x="160" y="150" width="80" height="50" fill="#ffc107"></rect>
-                            <rect x="120" y="180" width="160" height="20" fill="#4fc3f7"></rect>
-                            <text x="200" y="195" font-size="14" text-anchor="middle" fill="#333">Competição de Segurança</text>
-                        </svg>
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-semibold text-lg mb-1">Competições Educativas</h3>
-                        <p class="text-gray-600 text-sm">Desafios e jogos que estimulam o aprendizado sobre cibersegurança de forma divertida.</p>
-                    </div>
-                </div>
-            </div>
             
-            <div class="mt-10 text-center">
+            <div class="w-full mt-10 text-center">
+            </div>
+            <div class="w-full mt-10 text-center">
                 <a href="#" class="inline-flex items-center text-primary hover:text-secondary transition duration-300">
                     Ver mais atividades
                     <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -293,11 +243,13 @@
                     </svg>
                 </a>
             </div>
+            <div class="w-full mt-10 text-center">
+            </div>
         </div>
     </section>
 
     <!-- Materiais Educativos Section -->
-    <section id="materiais" class="py-20 bg-light">
+    <section id="materiais" class="py-20 bg-light hidden">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-primary mb-2">Materiais Educativos</h2>
@@ -416,7 +368,7 @@
                 <div class="lg:w-1/2">
                     <div class="bg-light p-8 rounded-lg shadow-md">
                         <h3 class="text-2xl font-semibold text-primary mb-6">Envie uma mensagem</h3>
-                        <form id="contactForm" class="space-y-4">
+                        <form id="contactForm" action="https://formsubmit.co/cybereducpi@gmail.com" class="space-y-4" method="post">
                             <div>
                                 <label for="name" class="block text-gray-700 mb-2">Nome</label>
                                 <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Seu nome">
@@ -424,7 +376,7 @@
                             
                             <div>
                                 <label for="email" class="block text-gray-700 mb-2">E-mail</label>
-                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="seu@email.com">
+                                <input type="email" name="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="seu@email.com">
                             </div>
                             
                             <div>
@@ -456,7 +408,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-medium text-gray-800">E-mail</h4>
-                                    <p class="text-gray-600">contato@cybereduc.org</p>
+                                    <p class="text-gray-600">cybereducpi@gmail.com</p>
                                 </div>
                             </div>
                             
@@ -466,11 +418,11 @@
                                 </div>
                                 <div>
                                     <h4 class="font-medium text-gray-800">Telefone</h4>
-                                    <p class="text-gray-600">(11) 9876-5432</p>
+                                    <p class="text-gray-600">(86) 99445-0606</p>
                                 </div>
                             </div>
                             
-                            <div class="flex items-start">
+                            <div class="hidden flex items-start">
                                 <div class="bg-primary bg-opacity-10 rounded-full w-10 h-10 flex items-center justify-center mr-4">
                                     <i class="fas fa-map-marker-alt text-primary"></i>
                                 </div>
@@ -485,20 +437,20 @@
                     <div class="bg-light p-8 rounded-lg shadow-md">
                         <h3 class="text-2xl font-semibold text-primary mb-6">Redes Sociais</h3>
                         <div class="flex space-x-4">
-                            <a href="#" class="bg-primary bg-opacity-10 hover:bg-opacity-20 transition duration-300 rounded-full w-12 h-12 flex items-center justify-center">
-                                <i class="fab fa-facebook-f text-primary text-xl"></i>
+                            <a href="https://www.linkedin.com/in/cyber-educ/" target="_blank" class="bg-primary bg-opacity-10 hover:bg-opacity-20 transition duration-300 rounded-full w-12 h-12 flex items-center justify-center">
+                                <i class="fab fa-linkedin-in text-primary text-xl"></i>
                             </a>
-                            <a href="#" class="bg-primary bg-opacity-10 hover:bg-opacity-20 transition duration-300 rounded-full w-12 h-12 flex items-center justify-center">
+                            <a href="https://www.instagram.com/cybereduc_pi/" target="_blank" class="bg-primary bg-opacity-10 hover:bg-opacity-20 transition duration-300 rounded-full w-12 h-12 flex items-center justify-center">
                                 <i class="fab fa-instagram text-primary text-xl"></i>
                             </a>
-                            <a href="#" class="bg-primary bg-opacity-10 hover:bg-opacity-20 transition duration-300 rounded-full w-12 h-12 flex items-center justify-center">
+                            <a href="#" class="hidden bg-primary bg-opacity-10 hover:bg-opacity-20 transition duration-300 rounded-full w-12 h-12 flex items-center justify-center">
+                                <i class="fab fa-facebook-f text-primary text-xl"></i>
+                            </a>
+                            <a href="#" class="hidden bg-primary bg-opacity-10 hover:bg-opacity-20 transition duration-300 rounded-full w-12 h-12 flex items-center justify-center">
                                 <i class="fab fa-twitter text-primary text-xl"></i>
                             </a>
-                            <a href="#" class="bg-primary bg-opacity-10 hover:bg-opacity-20 transition duration-300 rounded-full w-12 h-12 flex items-center justify-center">
+                            <a href="#" class="hidden bg-primary bg-opacity-10 hover:bg-opacity-20 transition duration-300 rounded-full w-12 h-12 flex items-center justify-center">
                                 <i class="fab fa-youtube text-primary text-xl"></i>
-                            </a>
-                            <a href="#" class="bg-primary bg-opacity-10 hover:bg-opacity-20 transition duration-300 rounded-full w-12 h-12 flex items-center justify-center">
-                                <i class="fab fa-linkedin-in text-primary text-xl"></i>
                             </a>
                         </div>
                     </div>
@@ -508,7 +460,7 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section class="py-16 bg-primary text-white">
+    <section class="py-16 bg-primary text-white hidden">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center justify-between">
                 <div class="md:w-1/2 mb-8 md:mb-0">
@@ -538,16 +490,16 @@
                     </div>
                     <p class="text-gray-400 mb-4">Educação em cibersegurança para todos.</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <i class="fab fa-facebook-f"></i>
+                        <a href="https://www.linkedin.com/in/cyber-educ/" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <a href="https://www.instagram.com/cybereduc_pi/" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <a href="#" class="hidden text-gray-400 hover:text-white transition duration-300">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <a href="#" class="hidden text-gray-400 hover:text-white transition duration-300">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -564,7 +516,7 @@
                     </ul>
                 </div>
                 
-                <div>
+                <div class="hidden">
                     <h4 class="text-lg font-semibold mb-4">Materiais</h4>
                     <ul class="space-y-2">
                         <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Cartilhas</a></li>
@@ -580,13 +532,13 @@
                     <ul class="space-y-2">
                         <li class="flex items-start">
                             <i class="fas fa-envelope mt-1 mr-2 text-secondary"></i>
-                            <span class="text-gray-400">contato@cybereduc.org</span>
+                            <span class="text-gray-400">cybereducpi@gmail.com</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-phone mt-1 mr-2 text-secondary"></i>
-                            <span class="text-gray-400">(11) 9876-5432</span>
+                            <span class="text-gray-400">(86) 99445-0606</span>
                         </li>
-                        <li class="flex items-start">
+                        <li class="flex items-start hidden">
                             <i class="fas fa-map-marker-alt mt-1 mr-2 text-secondary"></i>
                             <span class="text-gray-400">Av. Tecnologia, 123 - São Paulo, SP</span>
                         </li>
@@ -603,88 +555,7 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Mobile menu toggle
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('hidden');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Update active link
-                    document.querySelectorAll('.nav-link').forEach(link => {
-                        link.classList.remove('active');
-                    });
-                    this.classList.add('active');
-                    
-                    // Close mobile menu after clicking
-                    if (window.innerWidth < 768) {
-                        document.getElementById('menu').classList.add('hidden');
-                    }
-                }
-            });
-        });
-        
-        // Form submission handler
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            // Simple validation
-            if (!name || !email || !message) {
-                alert('Por favor, preencha todos os campos obrigatórios.');
-                return;
-            }
-            
-            // In a real application, you would send this data to a server
-            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-            
-            // Reset form
-            this.reset();
-        });
-        
-        // Active menu item based on scroll position
-        window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            let currentSection = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                const sectionHeight = section.clientHeight;
-                
-                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
-                    currentSection = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${currentSection}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
+<script src="assets/js/main.js"></script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9304de4250a4e2a2',t:'MTc0NDY1MTE2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
-</body></html>
+</body>
+</html>
